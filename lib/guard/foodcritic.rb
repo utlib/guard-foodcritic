@@ -1,8 +1,8 @@
 require "guard"
-require "guard/guard"
+require "guard/plugin"
 
 module Guard
-  class Foodcritic < Guard
+  class Foodcritic < Plugin
     autoload :Runner, "guard/foodcritic/runner"
 
     def initialize(watchers=[], options={})

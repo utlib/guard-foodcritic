@@ -5,7 +5,7 @@ module Guard
   class Foodcritic < Plugin
     autoload :Runner, "guard/foodcritic/runner"
 
-    def initialize(watchers=[], options={})
+    def initialize(options={})
       super
 
       @options = {
